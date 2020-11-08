@@ -64,7 +64,7 @@ class PasswordToken {
   }
 
   // SET TOKEN AS USED
-  async setUsed(token) {
+  static async setUsed(token) {
     if (token !== undefined) {
       try {
         const result = await knex
